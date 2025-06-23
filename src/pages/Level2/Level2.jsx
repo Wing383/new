@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import './level2.css'
+import './Level2.css'
 
 function Level2() {
   const navigate = useNavigate()
