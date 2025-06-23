@@ -6,7 +6,14 @@ function Level2() {
 
   return (
     <div className="center-container">
-      
+      <div className="button-container">
+        <button onClick={() => navigate('/Level3')}>
+          level3
+        </button>
+        <button onClick={() => navigate('/Level3')}>
+          level3
+        </button>
+      </div>
     </div>
   )
 }
