@@ -1,10 +1,8 @@
 .right-bottom-button {
-  position: fixed;
   top: 80px;
   left: 20px;
 }
 .left-bottom-button {
-  position: fixed;
   bottom: 20px;
   left: 20px;
 }

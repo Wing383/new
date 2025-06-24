@@ -1,0 +1,13 @@
+/* components/Footer.css */
+
+.footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 12px 0;
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+}
+.level-display {
+  font-weight: bold;
+}
