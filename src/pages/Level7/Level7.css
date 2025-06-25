@@ -1,22 +1,18 @@
 
-.top-button {
-  padding-top: 55px;
-} 
 .bottom-button {
-  margin-top: 100px; /* 例：好きな場所に余白で下げる */
+  margin-top: 200px; /* 例：好きな場所に余白で下げる */
   margin-left: 290px; /* flex環境なら右寄せ */
-  padding-bottom: 40px;
 }
 .vertical-buttons {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh; /* 画面の縦全体を使って中央に配置 */
   gap: 10px; /* ボタン同士の間隔 */
 }
-.button-wrapper {
-  display: flex;        /* 横並びにする */
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
 }

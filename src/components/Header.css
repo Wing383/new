@@ -1,11 +1,17 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;               /* 高さを指定（重要） */
   background-color: #333;
   color: white;
-  padding: 10px 20px;
   font-size: 1.5rem;
   text-align: center;
-}
 
-.level-display {
-  font-weight: bold;
+  display: flex;              /* 中央揃えのためのflexbox */
+  justify-content: center;   /* 横方向の中央揃え */
+  align-items: center;       /* 縦方向の中央揃え */
+
+  z-index: 1000;
 }
