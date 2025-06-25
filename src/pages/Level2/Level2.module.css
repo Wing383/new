@@ -1,11 +1,13 @@
-.center-container {
+/* Level2.module.css */
+
+.centerContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.button-container {
+.buttonContainer {
   display: flex;
   gap: 20px; /* ボタン同士の間隔 */
 }

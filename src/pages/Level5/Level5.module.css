@@ -1,20 +1,25 @@
+/* Level5.module.css */
 
-.top-button {
+.topButton {
   padding-top: 55px;
-} 
-.bottom-button {
-  margin-top: 100px; /* 例：好きな場所に余白で下げる */
+}
+
+.bottomButton {
+  margin-top: 100px; /* 好きな場所に余白で下げる */
   margin-left: 290px; /* flex環境なら右寄せ */
   padding-bottom: 40px;
 }
-.vertical-buttons {
+
+.verticalButtons {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh; /* 画面の縦全体を使って中央に配置 */
   gap: 10px; /* ボタン同士の間隔 */
 }
-.button-wrapper {
+
+.buttonWrapper {
   display: flex;        /* 横並びにする */
   justify-content: center;
   align-items: center;

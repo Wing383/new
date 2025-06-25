@@ -1,0 +1,29 @@
+/* Level4.module.css */
+
+.rightBottomButton {
+
+
+  left: 20px;
+  padding-top: 60px;
+}
+
+.leftBottomButton {
+
+  bottom: 20px;
+  left: 20px;
+}
+
+.verticalButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 10px;
+}
+
+.verticalButtons button {
+  width: 180px;
+  font-size: 1.2rem;
+  padding: 10px;
+}
