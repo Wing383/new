@@ -1,0 +1,22 @@
+/* src/components/MyButtonList/MyButtonList.module.css */
+.buttonList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+}
+
+.button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #3367d6;
+}

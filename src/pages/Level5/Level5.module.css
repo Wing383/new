@@ -5,11 +5,10 @@
 }
 
 .bottomButton {
-  margin-top: 100px; /* 好きな場所に余白で下げる */
-  margin-left: 290px; /* flex環境なら右寄せ */
-  padding-bottom: 40px;
+  position: absolute;  /* 親が position: relative のとき */
+  right: 20px;
+  bottom:  -100px;
 }
-
 .verticalButtons {
   display: flex;
   flex-direction: column;

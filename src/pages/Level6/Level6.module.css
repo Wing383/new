@@ -3,7 +3,13 @@
   margin-top: 200px; /* 例：好きな場所に余白で下げる */
   margin-left: 290px; /* flex環境なら右寄せ */
 }
-.vertical-buttons {
+.topalign{
+  margin-top: -45px;
+}
+.topalign2{
+  margin-top: 30px
+}
+.verticalbuttons {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,8 +17,17 @@
   height: 100vh; /* 画面の縦全体を使って中央に配置 */
   gap: 10px; /* ボタン同士の間隔 */
 }
+.buttonWrapper {
+  display: flex;        /* 横並びにする */
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
 button {
   padding: 12px 24px;
   font-size: 16px;
+  width: 150px;      /* 幅を固定 */
   cursor: pointer;
+  align-items: center;      /* 縦方向中央揃え */
+  justify-content: center;
 }
