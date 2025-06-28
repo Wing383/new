@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import styles from './Level6.module.css' 
 import Header from '../../components/Header/Header.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
-import Button from '../../components/ui/ItemList/button.jsx' // ← 追加
+import Button from '../../components/ui/ItemList/Mbutton.jsx' // ← 追加
 
 function Level6() {
   const navigate = useNavigate()
