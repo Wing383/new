@@ -11,19 +11,21 @@
   align-items: center;
   justify-content: flex-start; 
   height: 100vh; /* 画面の縦全体を使って中央に配置 */
-  gap: 10px; /* ボタン同士の間隔 */
+  gap: 5px; /* ボタン同士の間隔 */
 }
 .buttonWrapper {
   display: flex;/* 横並びにする */
   justify-content: center;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 80px
+
 }
 button {
   padding: 12px 24px;
   font-size: 16px;
-  width: 150px;      /* 幅を固定 */
+  width: 120px;      /*@fix:現在最小のスマホと考えられるのが「縦が568pxで横が320px」しかし
+                      そのため普通にweb上で動作させた際に150のボタンサイズだと、「縦が568pxで横が320px」
+                      の画面サイズで起動させた際に横幅が足りなくてはみ出てしまう。そのため120pxにしておいた。*/
   cursor: pointer;
   align-items: center;      /* 縦方向中央揃え */
   justify-content: center;
