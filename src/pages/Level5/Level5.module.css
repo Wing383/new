@@ -3,12 +3,12 @@
 .topButton {
   position: absolute;/*枠内で上から70pxで左から20pxの位置に固定表示*/
   top: 70px;/*上から70px*/
-  left: 20px;/*左から20px*/
+  left: 10px;/*左から10px*/
 }
 
 .bottomButton {
   position: absolute;  /* 親が position: relative のとき */
-  right: 20px;
+  right: 10px;
   bottom:  50px;
 }
 .verticalButtons {
