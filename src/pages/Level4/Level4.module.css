@@ -1,22 +1,22 @@
 /* Level4.module.css */
 
 .rightBottomButton {
-
-
-  left: 20px;
-  padding-top: 60px;
+  position: absolute;
+  top: 70px;
+  left: 10px;
 }
 
 .leftBottomButton {
-
+  position: absolute;
   bottom: 20px;
-  left: 20px;
+  left: 10px;
 }
 
 .verticalButtons {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;/*@fix:Headerがついているためそめ表示している項目の上にpaddingで余白を追加したら真ん中あたりに表示されるためなおよい*/
   justify-content: center;
   height: 100vh;
   gap: 10px;

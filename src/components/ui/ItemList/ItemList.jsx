@@ -1,8 +1,7 @@
 // src/components/MyButtonList/MyButtonList.jsx
-import { useNavigate } from 'react-router-dom'
-import styles from './Button.module.css'
+import styles from './ItemList.module.css'
 
-function MyButtonList({ buttons }) {
+function ItemList({ buttons }) {
   return (
     <div className={styles.buttonList}>
       {buttons.map((btn, index) => (
@@ -14,4 +13,4 @@ function MyButtonList({ buttons }) {
   )
 }
 
-export default MyButtonList
+export default ItemList

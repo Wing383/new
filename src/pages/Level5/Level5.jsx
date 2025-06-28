@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import styles from './Level5.module.css' // CSSモジュールとして読み込む
-import Header from '../../components/Header/Header.jsx'
-import Footer from '../../components/Footer/Footer.jsx'
+import Header from '@/components/Header/Header'//@fix:一般的にはパスはこのように@で指定することが多いい。(設定はjsconfig.jsonフォルダ内とvite.config.js内で行っている)
+import Footer from '@/components/Footer/Footer'//@fix:一般的にはパスはこのように@で指定することが多いい。(設定はjsconfig.jsonフォルダ内とvite.config.js内で行っている)
 
 const labels1 = ['あ', 'い', 'う']
 const labels2 = ['え', 'お', 'か']
