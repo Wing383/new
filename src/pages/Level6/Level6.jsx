@@ -35,16 +35,14 @@ function Level6() {
       <Header level={6} />
       <div className={styles.buttonWrapper}>
         <div className={styles.verticalbuttons}>
+          <button onClick={() => navigate('/Level5')}>level5</button>
           <Button buttons={button1} />
-          <div className={styles.topalign2}>
-            <Button buttons={button3} />
-          </div>
+          <Button buttons={button3} />
         </div>
         <div className={styles.verticalbuttons}>
-          <div className={styles.topalign}>
-            <Button buttons={button2} />
-          </div>
-        <Button buttons={button4} />
+          <button onClick={() => navigate('/Level7')}>level7</button>
+          <Button buttons={button2} />
+          <Button buttons={button4} />
         </div>
       </div>
       

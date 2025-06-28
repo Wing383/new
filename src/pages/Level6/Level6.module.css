@@ -1,19 +1,14 @@
 
-.bottom-button {
-  margin-top: 200px; /* 例：好きな場所に余白で下げる */
-  margin-left: 290px; /* flex環境なら右寄せ */
-}
-.topalign{
-  margin-top: -45px;
-}
+
 .topalign2{
   margin-top: 30px
 }
 .verticalbuttons {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; 
   height: 100vh; /* 画面の縦全体を使って中央に配置 */
   gap: 10px; /* ボタン同士の間隔 */
 }
