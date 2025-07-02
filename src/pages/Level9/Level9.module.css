@@ -1,0 +1,18 @@
+.parent1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 縦も中央にしたい場合 */   
+  margin-bottom: 20px; 
+}
+.parent2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 縦も中央にしたい場合 */   
+  margin-top: 20px;
+}
+button {
+  border-radius: 20px; /* 角を12px丸くする */
+}
+.input{
+  border-radius: 15px;
+}

@@ -1,0 +1,35 @@
+.default {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+}
+
+.redOutline {
+  border: 2px solid red;
+  color: black;
+  background-color: white;
+}
+
+.greenOutline {
+  border: 2px solid green;
+  color: black;
+  background-color: white;
+}
+.blueOutline {
+  border: 2px solid blue;
+  color: black;
+  background-color: white;
+}
+.brownOutline{
+border: 2px solid brown;
+  color: black;
+  background-color: white;
+}
+.button {
+  width: 200px;
+  border-radius: 20px;
+}

@@ -1,0 +1,30 @@
+.parent {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonWrapper {
+    display: flex;
+    /* 横並びにする */
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.leftbutton {
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    
+}
+.bottomImage {
+  position: fixed;
+  bottom: 25%;
+  right: 10%;
+  width: 100px;       /* 幅 */
+  height: 100px;      /* 高さも同じに！ */
+  object-fit: cover;  /* はみ出る部分をトリミングして中央表示 */
+  border-radius: 50%; /* 正円 */
+  z-index: 100;
+}
+

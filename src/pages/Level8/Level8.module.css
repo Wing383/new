@@ -1,0 +1,7 @@
+.buttonContainer {
+  display: flex;              /* Flexbox を有効にする */
+  flex-direction: column;     /* 子要素を縦に並べる */
+  gap: 12px;                  /* ボタン間のスペース */
+  align-items: center;        /* 横方向の中央揃え（任意） */
+  margin-top: 40px;           /* 上に余白（任意） */
+}

@@ -1,0 +1,6 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;  /* ← これを追加で縦並びに */
+  align-items: center;     /* 中央揃え（横方向の中心） */
+  gap: 16px;
+}

@@ -1,0 +1,9 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 縦も中央にしたい場合 */   
+  margin-bottom: 20px; 
+}
+.input{
+   border-radius: 15px;
+}
