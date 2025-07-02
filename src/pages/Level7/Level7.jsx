@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import styles from './Level7.module.css'
 import ToggleHeader from '../../components/ToggleHeader/ToggleHeader.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
-import Button from '../../components/ui/ItemList/Mbutton.jsx'
+import Button from '../../components/ui/ItemList/ItemList.jsx'
 import sampleImage from '../../assets/leve7.png'
 
 const button1 = [
