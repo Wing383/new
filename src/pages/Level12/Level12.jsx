@@ -1,23 +1,19 @@
-import { useNavigate,useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import styles from './Level11.module.css';
+import styles from './Level12.module.css';
 import { useTimer } from '../../hooks/useTimer';
 
-function Level11() {
-  const navigate = useNavigate();
+function Level12() {
   const location = useLocation();
   const receivedValue = location.state?.value || ''; // ← ここで値を受け取る
   const [value, setValue] = useState('');  // stateがない時のために空オブジェクトをデフォルトに
   const count = useTimer();
   return (
-    <div className={styles.parent}>
+    <div>
       <p>このページを開いてから{count}秒が経過しました。</p>
-      <div>
-        <button onClick={() => navigate('/Level12')}>level12</button>
-      </div>
     </div>
 
   );
 }
 
-export default Level11;
+export default Level12;

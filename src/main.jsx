@@ -13,6 +13,7 @@ import Level8 from './pages/Level8/Level8.jsx'
 import Level9 from './pages/Level9/Level9.jsx'
 import Level10 from './pages/Level10/Level10.jsx'
 import Level11 from './pages/Level11/Level11.jsx'
+import Level12 from './pages/Level12/Level12.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -29,6 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/Level9" element={<Level9 />} />
       <Route path="/Level10" element={<Level10 />} />
       <Route path="/Level11" element={<Level11 />} />
+      <Route path="/Level12" element={<Level12 />} />
 
     </Routes>
   </BrowserRouter>
