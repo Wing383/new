@@ -1,26 +1,29 @@
 /* Level5.module.css */
 
 .topButton {
-  padding-top: 55px;
+  position: absolute;/*枠内で上から70pxで左から20pxの位置に固定表示*/
+  top: 70px;/*上から70px*/
+  left: 10px;/*左から10px*/
 }
 
 .bottomButton {
   position: absolute;  /* 親が position: relative のとき */
-  right: 20px;
-  bottom:  -100px;
+  right: 10px;
+  bottom:  50px;
 }
 .verticalButtons {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top:30px;/*@fix:Headerがついているためそめ表示している項目の上にpaddingで余白を追加したら真ん中あたりに表示されるためなおよい*/
   height: 100vh; /* 画面の縦全体を使って中央に配置 */
-  gap: 10px; /* ボタン同士の間隔 */
+  gap: 5px; /* ボタン同士の間隔 */
 }
 
 .buttonWrapper {
   display: flex;        /* 横並びにする */
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+
 }

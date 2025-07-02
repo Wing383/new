@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
+import './index.css'//"@fix:自分も最初勘違いしていたがreactではindex.cssで最初に全体に反映されるレイアウトを設定するのが一般的みたいだ"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Level1 from './pages/Level1/Level1.jsx'
 import Level2 from './pages/Level2/Level2.jsx'
@@ -13,6 +13,7 @@ import Level8 from './pages/Level8/Level8.jsx'
 import Level9 from './pages/Level9/Level9.jsx'
 import Level10 from './pages/Level10/Level10.jsx'
 import Level11 from './pages/Level11/Level11.jsx'
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes>

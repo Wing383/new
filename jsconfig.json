@@ -1,0 +1,12 @@
+//@fix:このjsconfig.jsonファイルの中に下記のようなコードをかいて、そして
+//これとは別でvite.config.jsをこれとはまた別のコードに書き変えれば
+//srcフォルダ直下を@としてパス指定を楽に行うことが出来る。
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src"]
+}
