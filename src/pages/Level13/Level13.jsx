@@ -1,12 +1,10 @@
 import { useNumberListStore } from '../../atom/numberListStore';
-import { useNavigate,useLocation } from 'react-router-dom';
-import styles from './Level12.module.css';
+import styles from './Level13.module.css';
 import InputItem from '../../components/ui/InputItem/InputItem';
 import { useAtom } from 'jotai'; // ← JotaiのuseAtomをインポート
 import { valueAtom } from '../../atom/valueAtom';
 
-function Level12() {
-  const navigate = useNavigate();
+function Level13() {
   const {
     numbers,        // Zustand で管理されている入力リスト
     addNumber,
@@ -31,11 +29,10 @@ function Level12() {
             onDelete={deleteNumber} />
         ))}
       </div>
-      <button onClick={() => navigate('/Level13')}>level13</button>
 
       
     </div>
   );
 }
 
-export default Level12;
+export default Level13;
