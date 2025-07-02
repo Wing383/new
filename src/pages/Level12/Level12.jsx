@@ -1,19 +1,36 @@
-import { useLocation } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useNumberListStore } from '../../atom/numberListStore';
 import styles from './Level12.module.css';
-import { useTimer } from '../../hooks/useTimer';
+import InputItem from '../../components/ui/InputItem/InputItem';
+import { useAtom } from 'jotai'; // ← JotaiのuseAtomをインポート
+import { valueAtom } from '../../atom/valueAtom';
 
-function Level12() {
-  const location = useLocation();
-  const receivedValue = location.state?.value || ''; // ← ここで値を受け取る
-  const [value, setValue] = useState('');  // stateがない時のために空オブジェクトをデフォルトに
-  const count = useTimer();
+function LevelInput() {
+  const {
+    numbers,        // Zustand で管理されている入力リスト
+    addNumber,
+    updateNumber,
+    deleteNumber
+  } = useNumberListStore();
+  const [value, setValue] = useAtom(valueAtom);
+
   return (
     <div>
-      <p>このページを開いてから{count}秒が経過しました。</p>
-    </div>
+      <p>レベル10で入力した数値</p>
+      <p>{value}</p>
+      <div className={styles.scrollContainer}>
+        {numbers.map((input) => (
+          <InputItem
+            key={input.id}
+            id={input.id}
+            value={input.value}
+            onChange={updateNumber}
+            onDelete={deleteNumber} />
+        ))}
+      </div>
 
+      <button onClick={addNumber}>＋ 入力欄を追加</button>
+    </div>
   );
 }
 
-export default Level12;
+export default LevelInput;

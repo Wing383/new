@@ -24,7 +24,9 @@ function Level10() {
         placeholder="数値を入力"
       />
       <div>
-        <button onClick={() => navigate('/Level11')}>level11</button>
+        <button onClick={() => {
+          setValue(localValue);
+          navigate('/Level11')}}>level11</button>
       </div>
     </div>
 

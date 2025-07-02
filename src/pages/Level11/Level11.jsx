@@ -6,8 +6,6 @@ import { useTimer } from '../../hooks/useTimer';
 function Level11() {
   const navigate = useNavigate();
   const location = useLocation();
-  const receivedValue = location.state?.value || ''; // ← ここで値を受け取る
-  const [value, setValue] = useState('');  // stateがない時のために空オブジェクトをデフォルトに
   const count = useTimer();
   return (
     <div className={styles.parent}>
