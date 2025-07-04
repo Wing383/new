@@ -1,0 +1,19 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* 縦も中央にしたい場合 */   
+  gap: 20px;
+}
+.input{
+   border-radius: 15px;
+}
+.scrollContainer {
+  max-height: 185px;      /* ← 高さを調整 */
+  overflow-y: auto;       /* ← 縦スクロール */
+  border: 1px solid #ccc; /* ← 見た目の区切り */
+  padding: 8px;
+  margin-bottom: 16px;
+  width: 200px;
+  text-align: center;
+}

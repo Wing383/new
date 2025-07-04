@@ -36,6 +36,7 @@ function Level13() {
       </button>
       <p>ローカルストレージの値を取得して表示する</p>
       <p>保存されている値：{savedValue}</p>
+      <button onClick={() => navigate('/Level14')}>level14</button>
     </div>
   );
 }
