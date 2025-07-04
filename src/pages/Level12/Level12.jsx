@@ -1,9 +1,9 @@
-import { useNumberListStore } from '../../atom/numberListStore';
+import { useNumberListStore } from '@/store/numberListStore';
 import { useNavigate,useLocation } from 'react-router-dom';
 import styles from './Level12.module.css';
-import InputItem from '../../components/ui/InputItem/InputItem';
+import InputItem from '@/components/ui/InputItem/InputItem';
 import { useAtom } from 'jotai'; // ← JotaiのuseAtomをインポート
-import { valueAtom } from '../../atom/valueAtom';
+import { valueAtom } from '@/atom/valueAtom';
 
 function Level12() {
   const navigate = useNavigate();

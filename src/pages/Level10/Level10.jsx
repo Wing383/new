@@ -1,8 +1,8 @@
-import { useNavigate,useLocation } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import styles from './Level10.module.css';
 import { useAtom } from 'jotai'; // ← JotaiのuseAtomをインポート
-import { valueAtom } from '../../atom/valueAtom';
+import { valueAtom } from '@/atom/valueAtom';
 
 function Level10() {
   const navigate = useNavigate();
@@ -11,7 +11,8 @@ function Level10() {
 
   return (
     <div className={styles.wrapper}>
-      <p>
+       {/*@fix10:className={styles.textFont}で少し説明文をおしゃれにした*/}
+      <p className={styles.textFont}>
         レベル9で入力した数値
       </p>
       <p>{value}</p>

@@ -1,18 +1,30 @@
+
+/*@fix9:特に問題はないが見栄えだけよくなるようにしといた*/
+.textFont {
+  font-size:20px;/*文字の大きさ*/
+  font-weight:1px;/*文字の太さ*/
+  text-align: center;/*改行されても中央寄せで表示*/
+}
 .parent1 {
   display: flex;
   justify-content: center;
   align-items: center; /* 縦も中央にしたい場合 */   
-  margin-bottom: 20px; 
+
+  height: 100px;
+  font-size:20px;
+  
 }
 .parent2 {
   display: flex;
   justify-content: center;
   align-items: center; /* 縦も中央にしたい場合 */   
-  margin-top: 20px;
+  height: 20vh;
+  width: 100%;
 }
 button {
   border-radius: 20px; /* 角を12px丸くする */
+  width: 200px;
 }
 .input{
-  border-radius: 15px;
+  border-radius: 15px;  
 }

@@ -1,13 +1,12 @@
 import { useNavigate } from 'react-router-dom'
 import styles from './Level8.module.css'
-import Footer from '../../components/Footer/Footer.jsx'
 import StyledButton from '../../components/StyledButton/StyledButton.jsx';
 
 
 function Level8() {
   const navigate = useNavigate()
   const button1 = [
-    { label: "レベル1へ", path: "/Level1" },
+    { label: "レベル1へ", path: "/" },//@fix8:レベル1のページだけは一番最初にアクセスされるページなので「/」になる。
     { label: "レベル2へ", path: "/Level2" },
     { label: "レベル3へ", path: "/Level3" },
   ];

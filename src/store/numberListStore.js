@@ -1,4 +1,4 @@
-// src/stores/numberListStore.js
+//@fix12:このファイルは案外store内に入れておくことが多いいかもしれん
 import { create } from 'zustand';
 
 export const useNumberListStore = create((set) => ({

@@ -4,8 +4,40 @@
     cursor: pointer;
     border-radius: 25px;
 }
+
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* ボタンとコンテンツのX座標を中央にそろえる */
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px; /*@fix7:ボタンの丸みが大体25なので同じぐらいの丸みを枠にも付けておく、
+                          ここの数値を0pxにした状態と25pxにした状態でどのように動作が変化するのかだけ確かめてくれると嬉しい*/
+    align-items: center; /* ボタンとコンテンツのX座標を中央にそろえる */
+}
+
+/*@fix7:ここから追加、コンテンツ部分に開閉モーションを追加する*/
+.content {
+    overflow: hidden; /* 中の内容がスライド中にはみ出さないように */
+    max-height: 0; /* 初期状態で閉じておく */
+    opacity: 0;/*@fix7:表示させるまでの間は透明にしておく*/
+    
+    /*@fix7:transitionを付けておくことで
+    そのスタイルシートの影響を反映させた瞬間に
+    アニメーションを挟んで style の更新が行われるようになる*/
+    transition: 
+      max-height 0.4s ease,  /*@fix7:高さの変化を0.4秒かけてスムーズに */
+      opacity 0.4s ease,     /*@fix7:透明度の変化も0.4秒でフェード */
+      transform 0.4s ease;   /*@fix7:位置や拡大などの変形も0.4秒で */
+}
+
+/*@fix7:開いたときの状態 */
+.open {
+    max-height: 500px; /* @fix7:開いた際の高さ */
+    opacity: 1;/* @fix7:開いた際の表示内容の透明度 */
+    background-color: rgb(184, 179, 179); /*@fix7:最低限色分けしておくと開いた際のHeaderの区間がわかりやすい*/
+}
+
+/*@fix7:閉じたときの状態（見た目上不要だけどクラスとして定義）*/
+.closed {
+   max-height: 0;/* @fix7:閉じた際の高さ */
+   width: auto;
+   opacity: 0;/* @fix7:閉じた際の表示内容の透明度 */
 }

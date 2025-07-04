@@ -26,5 +26,6 @@
   object-fit: cover;  /* はみ出る部分をトリミングして中央表示 */
   border-radius: 50%; /* 正円 */
   z-index: 100;
+  border: 1px solid black;/*@fix7:画像も枠がないと少しわかりにくい部分があるため枠を付けることを進める。*/
 }
 

@@ -1,9 +1,9 @@
-import { useNavigate } from 'react-router-dom'
-import styles from './Level7.module.css'
-import ToggleHeader from '../../components/ToggleHeader/ToggleHeader.jsx'
-import Footer from '../../components/Footer/Footer.jsx'
-import Button from '../../components/ui/ItemList/ItemList.jsx'
-import sampleImage from '../../assets/leve7.png'
+import { useNavigate } from 'react-router-dom'//@fix7:エイリアス(@によるパス指定)をすることを進める
+import styles from './Level7.module.css'//@fix7:エイリアス(@によるパス指定)をすることを進める
+import ToggleHeader from '@/components/ToggleHeader/ToggleHeader.jsx'//@fix7:エイリアス(@によるパス指定)をすることを進める
+import Footer from '@/components/Footer/Footer.jsx'//@fix7:エイリアス(@によるパス指定)をすることを進める
+import Button from '@/components/ui/ItemList/ItemList.jsx'//@fix7:エイリアス(@によるパス指定)をすることを進める
+import sampleImage from '@/assets/leve7.png'//@fix7:エイリアス(@によるパス指定)をすることを進める
 
 const button1 = [
   { label: 'A' },

@@ -1,9 +1,8 @@
 import { useNavigate } from 'react-router-dom'
 import styles from './Level9.module.css'
-import ToggleHeader from '../../components/ToggleHeader/ToggleHeader.jsx'
-import { useState } from 'react';
+import ToggleHeader from '@/components/ToggleHeader/ToggleHeader.jsx'
 import { useAtom } from 'jotai';
-import { valueAtom } from '../../atom/valueAtom.js';
+import { valueAtom } from '@/atom/valueAtom.js';
 
 function Level9() {
   const navigate = useNavigate()
@@ -13,7 +12,8 @@ function Level9() {
   return (
     <div>
       <ToggleHeader >
-        <p>
+        {/*@fix9:className={styles.textFont}で少し説明文をおしゃれにした*/}
+        <p className={styles.textFont}>
           レベル10の画面に表示させたい数値を入力しよう!!
         </p>
         <div className={styles.parent1}>
